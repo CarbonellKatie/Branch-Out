@@ -5,6 +5,7 @@ const MainScreen = () => {
     <div id="main-screen">
       <div id="body">
         <button id="tasks">Tasks</button>
+        <button id="mood">Mood</button>
       </div>
     </div>
   );
