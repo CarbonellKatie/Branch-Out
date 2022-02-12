@@ -1,11 +1,16 @@
 import "./MainScreen.css";
 
-const MainScreen = () => {
+const MainScreen = (showMoodScreen, showTaskScreen) => {
   return (
     <div id="main-screen">
       <div id="body">
-        <button id="tasks">Tasks</button>
-        <button id="mood">Mood</button>
+        <img id="logo" src="logo.png"></img>
+        <button id="tasks" onClick={showTaskScreen}>
+          Tasks
+        </button>
+        <button id="mood" onClick={showMoodScreen}>
+          Mood
+        </button>
       </div>
     </div>
   );

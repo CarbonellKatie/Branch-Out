@@ -8,28 +8,34 @@
 }
 #tasks {
   width: 15%;
-  background: rgb(236, 215, 170);
+  background: rgb(255 188 148);
   height: 10%;
-  border: 2px solid rgb(184, 212, 160);
+  border: 2px solid rgb(230 100 78);
   border-radius: 10px;
   position: absolute;
   font-family: "sans-serif";
-  color: rgb(97, 67, 27);
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   bottom: 30px;
   left: 100px;
-
+  cursor: pointer;
 }
-#mood{
+#mood {
   width: 15%;
-  background: rgb(236, 215, 170);
+  background: rgb(255 188 148);
   height: 10%;
-  border: 2px solid rgb(184, 212, 160);
+  border: 2px solid rgb(230 100 78);
   border-radius: 10px;
   position: absolute;
   font-family: "sans-serif";
-  color: rgb(97, 67, 27);
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   bottom: 30px;
   right: 100px;
+  cursor: pointer;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
 }

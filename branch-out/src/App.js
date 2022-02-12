@@ -1,14 +1,56 @@
 //EDIT THIS
 //pls work or ill cry
+import { useState } from "react";
 import MainScreen from "./MainScreen/MainScreen.jsx";
+import Mood from "./Mood/Mood.jsx";
 
 function App() {
+  const [state, setState] = useState({
+    loginVis: false,
+    mainVis: true,
+    moodVis: false,
+    taskVis: false,
+  });
+
+  const showMoodScreen = () => {
+    let obj = {
+      loginVis: false,
+      mainVis: false,
+      taskVis: false,
+      moodVis: true,
+    };
+    setState(obj);
+  };
+
+  const showTaskScreen = () => {
+    let obj = {
+      loginVis: false,
+      mainVis: false,
+      taskVis: true,
+      moodVis: false,
+    };
+    setState(obj);
+  };
+
+  const showMainScreen = () => {
+    let obj = {
+      loginVis: false,
+      mainVis: true,
+      taskVis: false,
+      moodVis: false,
+    };
+    setState(obj);
+  };
+
   return (
     <div className="App">
-      {
-        <MainScreen></MainScreen>
-        /* html goes here */
-      }
+      {state.mainVis && (
+        <MainScreen
+          showMoodScreen={showMoodScreen}
+          showTaskScreen={showTaskScreen}
+        />
+      )}
+      {state.moodVis && <Mood />}
     </div>
   );
 }
