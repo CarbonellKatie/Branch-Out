@@ -6,3 +6,9 @@
   height: 100vh;
   width: 100vw;
 }
+#tasks {
+  width: 30%;
+  background: rgb(236, 215, 170);
+  height: 5%;
+  border: 2px solid rgb(184, 212, 160);
+}
