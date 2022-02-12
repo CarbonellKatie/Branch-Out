@@ -1,8 +1,12 @@
+import "./Mood.css";
 const Mood = () => {
   return (
-    <div id="mood">
-      <h1>Mood Chart</h1>
-    </div>
+    <div id="mood-screen">
+             <div id ="body-mood">
+            <button id="current-mood"></button>
+            </div>
+     </div>  
+    
   );
 };
 
