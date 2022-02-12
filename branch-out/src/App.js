@@ -1,12 +1,18 @@
 //EDIT THIS
 //pls work or ill cry
-import logo from "./logo.svg";
-import "./App.css";
 
 function App() {
-  return <div className="App">{/* html goes here */}</div>;
+  return (
+    <div className="App">
+      {
+        <h1>
+          App Component, master component that will manage all other components
+        </h1>
+        /* html goes here */
+      }
+    </div>
+  );
 }
-
 
 // this is a test
 export default App;
