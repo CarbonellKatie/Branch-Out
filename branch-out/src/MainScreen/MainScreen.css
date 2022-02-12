@@ -1,0 +1,9 @@
+#body {
+  background: url(./main.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-backgroun-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}

@@ -1,13 +1,12 @@
 //EDIT THIS
 //pls work or ill cry
+import MainScreen from "./MainScreen/MainScreen.jsx";
 
 function App() {
   return (
     <div className="App">
       {
-        <h1>
-          App Component, master component that will manage all other components
-        </h1>
+        <MainScreen></MainScreen>
         /* html goes here */
       }
     </div>
