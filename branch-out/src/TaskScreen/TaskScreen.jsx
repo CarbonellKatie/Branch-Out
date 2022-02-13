@@ -7,13 +7,21 @@ const TaskScreen = () => {
         <table id="task-table">
           <tbody>
             <tr>
-              <td>Go To Gym</td>
+              <input type = "checkbox" id = "Go to the gym" name = "Go to the gym"></input>
+              <td>Go to the gym</td>
+              {/* <label for = "Go to the gym">Go to the gym</label> */}
+              {/* <td>Go To Gym</td> */}
+            </tr>
+            <tr> 
+              <td>
+            <input type = "checkbox" id = "Talk to someone you don't know" name = "Talk to someone you don't know"></input>
+            </td>
+              <td>Talk to someone you don't know</td>
             </tr>
             <tr>
-              <td>Talk to Someone You Don't Know</td>
-            </tr>
-            <tr>
-              <td>Go to a Social Event</td>
+            <input type = "checkbox" id = "social event" name = "social event"></input>
+            <td>Go to a social event</td>
+              {/* <label for = "social event">Go to a social event</label> */}
             </tr>
           </tbody>
         </table>
