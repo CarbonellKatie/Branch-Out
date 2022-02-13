@@ -40,39 +40,28 @@ const Mood = ({ showMainScreen }) => {
               <tbody>
                 <tr>
                   <td>
-                    <button id="happy">
-                      <img scr="./Angry.png"></img>
-                    </button>
+                    <img id="img" src={require("./poof.gif")} />
                   </td>
                   <td>
-                    <button id="sad">
-                      Mood 2<img scr=""></img>
-                    </button>
+                    <img id="img" src={require("./MoodImages/Calm.png")} />
                   </td>
                   <td>
-                    <button id="excited">
-                      Mood 3<img scr=""></img>
-                    </button>
+                    <img id="img" src={require("./MoodImages/Excited.png")} />
                   </td>
                   <td>
-                    <button id="angry">
-                      Mood 4<img scr=""></img>
-                    </button>
+                    <img id="img" src={require("./MoodImages/Happy.png")} />
                   </td>
                   <td>
-                    <button id="lonely">
-                      Mood 5<img scr=""></img>
-                    </button>
+                    <img id="img" src={require("./MoodImages/Lonely.png")} />
                   </td>
                   <td>
-                    <button id="sociable">
-                      Mood 6<img scr=""></img>
-                    </button>
+                    <img id="img" src={require("./MoodImages/Sad.png")} />
                   </td>
                   <td>
-                    <button id="calm">
-                      Mood 7<img scr=""></img>
-                    </button>
+                    <img
+                      id="img"
+                      src={require("./MoodImages/Socialible.png")}
+                    />
                   </td>
                 </tr>
               </tbody>
