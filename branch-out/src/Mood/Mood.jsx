@@ -6,8 +6,8 @@ const Mood = ({ showMainScreen }) => {
         <button id="tasks" onClick={showMainScreen}>
           Back to Main
         </button>
+        <img id="current-state" src={require("./MoodImages/calm.gif")} />
         <div id="mood-of-the-day">
-          <img id="current-state" src={require("./MoodImages/calm.gif")} />
           <table id="mood-table">
             <tbody>
               <tr>

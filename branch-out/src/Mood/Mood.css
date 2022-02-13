@@ -6,6 +6,7 @@
 }
 
 #mood-of-the-day {
+  margin-top: 5rem;
   position: absolute;
   width: 60%;
   top: 40%;
@@ -27,8 +28,10 @@
 
 #current-state {
   position: relative;
+  width: 20% !important;
+
   margin-left: 40%;
-  margin-right: auto;
-  height: 100px;
-  width: 100px;
+  margin-right: 40%;
+  margin-top: 3rem;
+  /* margin-top: 20% !important; */
 }
