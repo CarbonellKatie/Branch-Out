@@ -4,3 +4,10 @@
   height: 100vh;
   width: 100vw;
 }
+
+#mood-of-the-day {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  width: 180px;
+}

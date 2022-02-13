@@ -7,7 +7,7 @@ const Mood = ({ showMainScreen }) => {
           Back to Main
         </button>
         <div id="mood-of-the-day">
-          <table>
+          <table id="mood-table">
             <tbody>
               <tr>
                 <td>
@@ -36,7 +36,7 @@ const Mood = ({ showMainScreen }) => {
           </table>
 
           <div id="options">
-            <table>
+            <table id="options-table">
               <tbody>
                 <tr>
                   <td>
