@@ -14,8 +14,8 @@ const Mood = ({ showMainScreen, setMood }) => {
     setMood(parseInt(e.target.id) - 1);
   };
   const images = [
-    "./MoodImages/happy.gif",
-    "./MoodImages/calm.gif",
+    "./MoodImages/happy2.gif",
+    "./MoodImages/calm2.gif",
     "./MoodImages/excited.gif",
     "./MoodImages/angry.gif",
     "./MoodImages/lonely.gif",
@@ -39,14 +39,14 @@ const Mood = ({ showMainScreen, setMood }) => {
                     <img
                       id="1"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/happy.gif")}
+                      src={require("./MoodImages/happy2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="2"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/calm.gif")}
+                      src={require("./MoodImages/calm2.gif")}
                     />
                   </td>
                   <td>

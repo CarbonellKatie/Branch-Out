@@ -35,7 +35,16 @@
 
 #logo {
   position: absolute;
+  top: 2%;
   right: 1%;
   width: 300px;
   height: 100px;
+}
+
+#main-mood {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
 }
