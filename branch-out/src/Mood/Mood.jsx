@@ -1,12 +1,17 @@
 import "./Mood.css";
 import { useState } from "react";
 
-const Mood = ({ showMainScreen }) => {
+const Mood = ({ showMainScreen, setMood }) => {
+  // let currImage = "./MoodImages/calm.gif";
   const [state, setState] = useState({ currImage: "./MoodImages/calm.gif" });
 
   const changeImg = (e) => {
     // console.log(e.target.id);
     setState({ currImage: images[parseInt(e.target.id) - 1] });
+    console.log("got here");
+    console.log(e.target.id - 1);
+    // currImage = images[parseInt(e.target.id) - 1];
+    setMood(parseInt(e.target.id) - 1);
   };
   const images = [
     "./MoodImages/happy.gif",
@@ -24,7 +29,7 @@ const Mood = ({ showMainScreen }) => {
         <button id="tasks" onClick={showMainScreen}>
           Back to Main
         </button>
-        <img id="current-state" src={require(`${state.currImage}`)} />
+        <img id="current-state" src={require(`${state.currImage}`)}></img>
         <div id="mood-of-the-day">
           <div id="options">
             <table id="options-table">

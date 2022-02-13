@@ -11,10 +11,17 @@ function App() {
     mainVis: true,
     moodVis: false,
     taskVis: false,
+    currMood: 3,
   });
 
+  const setMood = (mood) => {
+    const obj = { ...state, currMood: mood };
+    console.log(mood);
+    setState(obj);
+  };
   const showMoodScreen = () => {
     let obj = {
+      ...state,
       loginVis: false,
       mainVis: false,
       taskVis: false,
@@ -26,6 +33,7 @@ function App() {
 
   const showTaskScreen = () => {
     let obj = {
+      ...state,
       loginVis: false,
       mainVis: false,
       taskVis: true,
@@ -37,6 +45,7 @@ function App() {
 
   const showMainScreen = () => {
     let obj = {
+      ...state,
       loginVis: false,
       mainVis: true,
       taskVis: false,
@@ -51,9 +60,12 @@ function App() {
         <MainScreen
           showMoodScreen={showMoodScreen}
           showTaskScreen={showTaskScreen}
+          currMood={state.currMood}
         />
       )}
-      {state.moodVis && <Mood showMainScreen={showMainScreen} />}
+      {state.moodVis && (
+        <Mood showMainScreen={showMainScreen} setMood={setMood} />
+      )}
       {state.taskVis && <TaskScreen showMainScreen={showMainScreen} />}
     </div>
   );
