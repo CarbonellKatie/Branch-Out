@@ -12,8 +12,13 @@ function App() {
     moodVis: false,
     taskVis: false,
     currMood: 3,
+    tally: 0,
   });
 
+  const setTally = (tally) => {
+    const obj = { ...state, tally: tally };
+    setState(obj);
+  };
   const setMood = (mood) => {
     const obj = { ...state, currMood: mood };
     console.log(mood);
@@ -54,6 +59,18 @@ function App() {
     setState(obj);
   };
 
+  const showMainScreenTally = () => {
+    let obj = {
+      ...state,
+      loginVis: false,
+      mainVis: true,
+      taskVis: false,
+      moodVis: false,
+      tally: sessionStorage.getItem("tally"),
+    };
+    setState(obj);
+  };
+
   return (
     <div className="App">
       {state.mainVis && (
@@ -61,12 +78,15 @@ function App() {
           showMoodScreen={showMoodScreen}
           showTaskScreen={showTaskScreen}
           currMood={state.currMood}
+          tally={state.tally}
         />
       )}
       {state.moodVis && (
         <Mood showMainScreen={showMainScreen} setMood={setMood} />
       )}
-      {state.taskVis && <TaskScreen showMainScreen={showMainScreen} />}
+      {state.taskVis && (
+        <TaskScreen showMainScreenTally={showMainScreenTally} />
+      )}
     </div>
   );
 }

@@ -1,36 +1,29 @@
 import "./TaskScreen.css";
+import { useState, useEffect } from "react";
 
 var tallier = 0;
+const TaskScreen = ({ showMainScreenTally }) => {
+  useEffect(() => {
+    sessionStorage.setItem("tally", 0);
+  }, []);
 
-function tallyUp(e) {
-  console.log(e.target.checked);
-  if (e.target.checked) {
-    tallier++;
-  } else {
-    tallier--;
-  }
-  sessionStorage.setItem("tally", tallier);
+  const tallyUp = (e) => {
+    console.log(e.target.checked);
+    tallier = sessionStorage.getItem("tally")
+      ? sessionStorage.getItem("tally")
+      : 0;
+    if (e.target.checked) {
+      tallier++;
+      sessionStorage.setItem("tally", tallier);
+    } else {
+      tallier--;
+      sessionStorage.setItem("tally", tallier);
+    }
+  };
 
-  if ("Go to the gym".checked) {
-    tallier = "Go to the gym".value + tallier;
-  } else if ("talk to someone you don't know".checked) {
-    tallier = "talk to someone you don't know".value + tallier;
-  } else if ("Social event".checked) {
-    tallier = "social event".value + tallier;
-  }
-  if (tallier < 5) {
-  } else if (tallier == 5) {
-  } else if (tallier == 10) {
-  } else if (tallier == 15) {
-  } else if (tallier == 20) {
-  } else if (tallier == 25) {
-  }
-}
-
-const TaskScreen = ({ showMainScreen }) => {
   return (
     <div id="main-screen">
-      <button id="tasks" onClick={showMainScreen}>
+      <button id="tasks" onClick={showMainScreenTally}>
         Back to Main
       </button>
       <div id="body-task-screen">
