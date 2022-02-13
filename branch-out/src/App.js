@@ -2,6 +2,7 @@
 //pls work or ill cry
 import { useState } from "react";
 import MainScreen from "./MainScreen/MainScreen.jsx";
+import TaskScreen from "./TaskScreen/TaskScreen.jsx";
 import Mood from "./Mood/Mood.jsx";
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
         />
       )}
       {state.moodVis && <Mood showMainScreen={showMainScreen} />}
+      {state.taskVis && <TaskScreen showMainScreen={showMainScreen} />}
     </div>
   );
 }

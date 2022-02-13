@@ -1,0 +1,15 @@
+#body-task-screen {
+  background: url(./task.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+#task-table {
+  width: 60%;
+  margin: auto;
+}
+
+#task-table tr {
+  height: 10%;
+}
