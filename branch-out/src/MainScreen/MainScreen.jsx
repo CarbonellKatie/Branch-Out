@@ -1,6 +1,6 @@
 import "./MainScreen.css";
 
-const MainScreen = (showMoodScreen, showTaskScreen) => {
+const MainScreen = ({ showMoodScreen, showTaskScreen }) => {
   return (
     <div id="main-screen">
       <div id="body">

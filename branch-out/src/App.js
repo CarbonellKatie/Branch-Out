@@ -19,6 +19,7 @@ function App() {
       taskVis: false,
       moodVis: true,
     };
+    console.log("clicked mood button");
     setState(obj);
   };
 
@@ -29,6 +30,7 @@ function App() {
       taskVis: true,
       moodVis: false,
     };
+    console.log("clicked task screen");
     setState(obj);
   };
 
