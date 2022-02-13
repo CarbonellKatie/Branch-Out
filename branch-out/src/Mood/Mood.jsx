@@ -43,19 +43,19 @@ const Mood = ({ showMainScreen }) => {
                     <img id="img" src={require("./poof.gif")} />
                   </td>
                   <td>
-                    <img id="img" src={require("./MoodImages/Calm.png")} />
+                    <img id="img" src={require("./MoodImages/calm.gif")} />
                   </td>
                   <td>
                     <img id="img" src={require("./MoodImages/Excited.png")} />
                   </td>
                   <td>
-                    <img id="img" src={require("./MoodImages/Happy.png")} />
+                    <img id="img" src={require("./MoodImages/angry.gif")} />
                   </td>
                   <td>
                     <img id="img" src={require("./MoodImages/Lonely.png")} />
                   </td>
                   <td>
-                    <img id="img" src={require("./MoodImages/Sad.png")} />
+                    <img id="img" src={require("./MoodImages/sad.gif")} />
                   </td>
                   <td>
                     <img
