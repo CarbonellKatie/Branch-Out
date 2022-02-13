@@ -1,5 +1,28 @@
 import "./TaskScreen.css";
 
+function tallyUp() {
+  var tallier = 0;
+  if ("Go to the gym".checked) {
+    tallier = "Go to the gym".value + tallier;
+  } else if ("talk to someone you don't know".checked) {
+    tallier = "talk to someone you don't know".value + tallier;
+  } else if ("Social event".checked) {
+    tallier = "social event".value + tallier;
+  }
+  if (tallier < 5) {
+  } else if (tallier == 5) {
+  } else if (tallier == 10) {
+  } else if (tallier == 15) {
+  } else if (tallier == 20) {
+  } else if (tallier == 25) {
+  }
+
+  // var checkbox = document.querySelector("input [type = 'checkbox']");
+  // checkbox.addEventListener("change",function(){
+  //   this.value = this.checked ? 1 : 0;
+  // });
+}
+
 const TaskScreen = ({ showMainScreen }) => {
   return (
     <div id="main-screen">
@@ -14,10 +37,9 @@ const TaskScreen = ({ showMainScreen }) => {
                 type="checkbox"
                 id="Go to the gym"
                 name="Go to the gym"
+                value={5}
               ></input>
               <td>Go to the gym</td>
-              {/* <label for = "Go to the gym">Go to the gym</label> */}
-              {/* <td>Go To Gym</td> */}
             </tr>
             <tr>
               <td>
@@ -25,6 +47,7 @@ const TaskScreen = ({ showMainScreen }) => {
                   type="checkbox"
                   id="Talk to someone you don't know"
                   name="Talk to someone you don't know"
+                  value={5}
                 ></input>
               </td>
               <td>Talk to someone you don't know</td>
@@ -33,10 +56,28 @@ const TaskScreen = ({ showMainScreen }) => {
               <input
                 type="checkbox"
                 id="social event"
-                name="social event"
+                name="Social event"
+                value={5}
               ></input>
-              <td>Go to a social event</td>
-              {/* <label for = "social event">Go to a social event</label> */}
+              <td>Go to a Hackathon</td>
+            </tr>
+            <tr>
+              <input
+                type="checkbox"
+                id="go on a walk"
+                name="Go on a walk"
+                value={5}
+              ></input>
+              <td>Go on a walk</td>
+            </tr>
+            <tr>
+              <input
+                type="checkbox"
+                id="call your granny"
+                name="Call your granny"
+                value={5}
+              ></input>
+              <td>Call your granny</td>
             </tr>
           </tbody>
         </table>
