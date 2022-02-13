@@ -8,8 +8,12 @@
 #task-table {
   width: 60%;
   margin: auto;
+  text-align: center;
+  background-color: rgba(199, 176, 180, 0.383);
+  border: 2px solid brown;
 }
 
 #task-table tr {
   height: 10%;
+  border: 2px solid brown;
 }
