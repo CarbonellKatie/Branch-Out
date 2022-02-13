@@ -35,7 +35,7 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox"
+                  type="checkbox" onClick = {tallyUp}
                   className="box"
                   name="Go to the gym"
                   value={5}
@@ -46,7 +46,7 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox"
+                  type="checkbox" onClick = {tallyUp}
                   className="box"
                   name="Talk to someone you don't know"
                   value={5}
@@ -57,7 +57,7 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox"
+                  type="checkbox" onClick = {tallyUp}
                   className="box"
                   name="Social event"
                   value={5}
@@ -68,7 +68,7 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox"
+                  type="checkbox" onClick = {tallyUp}
                   className="box"
                   name="Go on a walk"
                   value={5}
@@ -79,7 +79,7 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox"
+                  type="checkbox" onClick = {tallyUp}
                   className="box"
                   name="Call your granny"
                   value={5}
