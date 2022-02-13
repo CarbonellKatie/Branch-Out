@@ -33,19 +33,21 @@ const TaskScreen = ({ showMainScreen }) => {
         <table id="task-table">
           <tbody>
             <tr>
-              <input
-                type="checkbox"
-                id="Go to the gym"
-                name="Go to the gym"
-                value={5}
-              ></input>
+              <td>
+                <input
+                  type="checkbox"
+                  className="box"
+                  name="Go to the gym"
+                  value={5}
+                ></input>
+              </td>
               <td>Go to the gym</td>
             </tr>
             <tr>
               <td>
                 <input
                   type="checkbox"
-                  id="Talk to someone you don't know"
+                  className="box"
                   name="Talk to someone you don't know"
                   value={5}
                 ></input>
@@ -53,30 +55,36 @@ const TaskScreen = ({ showMainScreen }) => {
               <td>Talk to someone you don't know</td>
             </tr>
             <tr>
-              <input
-                type="checkbox"
-                id="social event"
-                name="Social event"
-                value={5}
-              ></input>
+              <td>
+                <input
+                  type="checkbox"
+                  className="box"
+                  name="Social event"
+                  value={5}
+                ></input>
+              </td>
               <td>Go to a Hackathon</td>
             </tr>
             <tr>
-              <input
-                type="checkbox"
-                id="go on a walk"
-                name="Go on a walk"
-                value={5}
-              ></input>
+              <td>
+                <input
+                  type="checkbox"
+                  className="box"
+                  name="Go on a walk"
+                  value={5}
+                ></input>
+              </td>
               <td>Go on a walk</td>
             </tr>
             <tr>
-              <input
-                type="checkbox"
-                id="call your granny"
-                name="Call your granny"
-                value={5}
-              ></input>
+              <td>
+                <input
+                  type="checkbox"
+                  className="box"
+                  name="Call your granny"
+                  value={5}
+                ></input>
+              </td>
               <td>Call your granny</td>
             </tr>
           </tbody>
