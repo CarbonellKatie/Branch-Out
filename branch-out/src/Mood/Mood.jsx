@@ -41,7 +41,7 @@ const Mood = ({ showMainScreen }) => {
                 <tr>
                   <td>
                     <button id="happy">
-                      Mood 1<img scr=""></img>
+                      <img scr="./Angry.png"></img>
                     </button>
                   </td>
                   <td>
