@@ -7,10 +7,15 @@
 
 #task-table {
   width: 60%;
-  margin: auto;
+  margin-top: 50px;
+  margin-left: 22%;
   text-align: center;
-  background-color: rgba(199, 176, 180, 0.383);
-  border: 2px solid brown;
+  background-color: rgba(180, 89, 165, 0.61);
+  border: 2px solid rgb(121, 45, 118);
+  border-radius: 10px;
+  font-family: "sans-serif";
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
 }
 
 #task-table tr {
