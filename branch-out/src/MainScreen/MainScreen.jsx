@@ -18,7 +18,7 @@ const MainScreen = ({ showMoodScreen, showTaskScreen, currMood }) => {
       <div id="body">
         <img id="logo" src={require("./logo.png")}></img>
         {/* <img id="current-state" src={require(`${currMood}`)} /> */}
-        <img id="current-state" src={require(`${imagesMain[currMood]}`)}></img>
+        <img id="main-mood" src={require(`${imagesMain[currMood]}`)}></img>
         <button id="tasks" onClick={showTaskScreen}>
           Tasks
         </button>
