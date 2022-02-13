@@ -41,37 +41,37 @@ const Mood = ({ showMainScreen }) => {
                 <tr>
                   <td>
                     <button id="happy">
-                      <img scr=""></img>
+                      Mood 1<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="sad">
-                      <img scr=""></img>
+                      Mood 2<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="excited">
-                      <img scr=""></img>
+                      Mood 3<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="angry">
-                      <img scr=""></img>
+                      Mood 4<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="lonely">
-                      <img scr=""></img>
+                      Mood 5<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="sociable">
-                      <img scr=""></img>
+                      Mood 6<img scr=""></img>
                     </button>
                   </td>
                   <td>
                     <button id="calm">
-                      <img scr=""></img>
+                      Mood 7<img scr=""></img>
                     </button>
                   </td>
                 </tr>

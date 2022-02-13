@@ -7,7 +7,17 @@
 
 #mood-of-the-day {
   position: absolute;
-  top: 65%;
-  left: 45%;
-  width: 180px;
+  width: 60%;
+  top: 60%;
+  left: 20%;
+  right: 20%;
+}
+#options-table td {
+}
+#options-table button {
+  cursor: pointer;
+  background-color: bisque;
+  border: 5px solid rgb(228, 195, 195);
+  width: 8rem;
+  height: 5rem;
 }
