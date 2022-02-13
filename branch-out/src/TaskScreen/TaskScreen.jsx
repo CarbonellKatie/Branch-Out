@@ -1,9 +1,12 @@
 import "./TaskScreen.css";
 
-const TaskScreen = () => {
+const TaskScreen = ({ showMainScreen}) => {
   return (
     <div id="main-screen">
       <div id="body-task-screen">
+      <button id="tasks" onClick={showMainScreen}>
+          Back to Main
+        </button>
         <table id="task-table">
           <tbody>
             <tr>
