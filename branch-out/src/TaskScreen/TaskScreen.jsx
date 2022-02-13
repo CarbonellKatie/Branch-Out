@@ -1,7 +1,16 @@
 import "./TaskScreen.css";
 
-function tallyUp() {
-  var tallier = 0;
+var tallier = 0;
+
+function tallyUp(e) {
+  console.log(e.target.checked);
+  if (e.target.checked) {
+    tallier++;
+  } else {
+    tallier--;
+  }
+  sessionStorage.setItem("tally", tallier);
+
   if ("Go to the gym".checked) {
     tallier = "Go to the gym".value + tallier;
   } else if ("talk to someone you don't know".checked) {
@@ -16,11 +25,6 @@ function tallyUp() {
   } else if (tallier == 20) {
   } else if (tallier == 25) {
   }
-
-  // var checkbox = document.querySelector("input [type = 'checkbox']");
-  // checkbox.addEventListener("change",function(){
-  //   this.value = this.checked ? 1 : 0;
-  // });
 }
 
 const TaskScreen = ({ showMainScreen }) => {
@@ -35,7 +39,8 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox" onClick = {tallyUp}
+                  type="checkbox"
+                  onClick={tallyUp}
                   className="box"
                   name="Go to the gym"
                   value={5}
@@ -46,7 +51,8 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox" onClick = {tallyUp}
+                  type="checkbox"
+                  onClick={(e) => tallyUp(e)}
                   className="box"
                   name="Talk to someone you don't know"
                   value={5}
@@ -57,7 +63,8 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox" onClick = {tallyUp}
+                  type="checkbox"
+                  onClick={tallyUp}
                   className="box"
                   name="Social event"
                   value={5}
@@ -68,7 +75,8 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox" onClick = {tallyUp}
+                  type="checkbox"
+                  onClick={tallyUp}
                   className="box"
                   name="Go on a walk"
                   value={5}
@@ -79,7 +87,8 @@ const TaskScreen = ({ showMainScreen }) => {
             <tr>
               <td>
                 <input
-                  type="checkbox" onClick = {tallyUp}
+                  type="checkbox"
+                  onClick={tallyUp}
                   className="box"
                   name="Call your granny"
                   value={5}
