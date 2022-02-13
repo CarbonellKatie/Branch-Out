@@ -8,34 +8,6 @@ const Mood = ({ showMainScreen }) => {
         </button>
         <img id="current-state" src={require("./MoodImages/calm.gif")} />
         <div id="mood-of-the-day">
-          <table id="mood-table">
-            <tbody>
-              <tr>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-                <td>
-                  <img scr=""></img>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
           <div id="options">
             <table id="options-table">
               <tbody>
@@ -47,22 +19,19 @@ const Mood = ({ showMainScreen }) => {
                     <img id="img" src={require("./MoodImages/calm.gif")} />
                   </td>
                   <td>
-                    <img id="img" src={require("./MoodImages/Excited.png")} />
+                    <img id="img" src={require("./MoodImages/excited.gif")} />
                   </td>
                   <td>
                     <img id="img" src={require("./MoodImages/angry.gif")} />
                   </td>
                   <td>
-                    <img id="img" src={require("./MoodImages/Lonely.png")} />
+                    <img id="img" src={require("./MoodImages/lonely.gif")} />
                   </td>
                   <td>
                     <img id="img" src={require("./MoodImages/sad.gif")} />
                   </td>
                   <td>
-                    <img
-                      id="img"
-                      src={require("./MoodImages/Socialible.png")}
-                    />
+                    <img id="img" src={require("./MoodImages/Socialibe.gif")} />
                   </td>
                 </tr>
               </tbody>
