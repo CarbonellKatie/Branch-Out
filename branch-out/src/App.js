@@ -52,7 +52,7 @@ function App() {
           showTaskScreen={showTaskScreen}
         />
       )}
-      {state.moodVis && <Mood />}
+      {state.moodVis && <Mood showMainScreen={showMainScreen} />}
     </div>
   );
 }
