@@ -14,13 +14,13 @@ const Mood = ({ showMainScreen, setMood }) => {
     setMood(parseInt(e.target.id) - 1);
   };
   const images = [
-    "./MoodImages/happy.gif",
-    "./MoodImages/calm.gif",
-    "./MoodImages/excited.gif",
-    "./MoodImages/angry.gif",
-    "./MoodImages/lonely.gif",
-    "./MoodImages/sad.gif",
-    "./MoodImages/Socialibe.gif",
+    "./MoodImages/happy2.gif",
+    "./MoodImages/calm2.gif",
+    "./MoodImages/excited2.gif",
+    "./MoodImages/angry2.gif",
+    "./MoodImages/lonely2.gif",
+    "./MoodImages/sad2.gif",
+    "./MoodImages/socialible2.gif",
   ];
 
   return (
@@ -39,49 +39,49 @@ const Mood = ({ showMainScreen, setMood }) => {
                     <img
                       id="1"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/happy.gif")}
+                      src={require("./MoodImages/happy2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="2"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/calm.gif")}
+                      src={require("./MoodImages/calm2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="3"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/excited.gif")}
+                      src={require("./MoodImages/excited2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="4"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/angry.gif")}
+                      src={require("./MoodImages/angry2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="5"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/lonely.gif")}
+                      src={require("./MoodImages/lonely2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="6"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/sad.gif")}
+                      src={require("./MoodImages/sad2.gif")}
                     />
                   </td>
                   <td>
                     <img
                       id="7"
                       onClick={(e) => changeImg(e)}
-                      src={require("./MoodImages/Socialibe.gif")}
+                      src={require("./MoodImages/socialible2.gif")}
                     />
                   </td>
                 </tr>
